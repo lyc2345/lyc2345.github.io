@@ -1,0 +1,54 @@
+---
+layout: page
+title: Notes
+---
+			<section>
+
+				<h2>Swift Scripting Bridge For macOS Application</h2>
+				<p>Scripting Bridge convert to Objective-C, .h, 
+				<code>sdef /Applications/iTunes.app | sdp -fh --basename iTunes</code>
+
+				<p>Scripting Bridge convert to Swift, 
+				<a href="https://majestysoftware.wordpress.com/2015/03/31/swift-scripting-part-1/">https://majestysoftware.wordpress.com/2015/03/31/swift-scripting-part-1/</a>
+
+				<br />
+				<br />
+				<a href="{{ site.baseurl }}/subnotes/1.html">More</a>.
+				<hr />
+
+				<header>
+					<h2>Difference between Frame and Bounds</h2>
+					<p>frame是view的相對座標, bounds是起點(0, 0)的絕對座標</p>
+				</header>
+				<hr />
+
+				<header>
+					<h2>Why guard is better than if</h2>
+					<p>guard 有點像是一段程式碼做完再做下一段, 可以避免程式金字塔</p>
+					<p>而if則會讓程式碼在金字塔內跳來跳去，會讓開發者錯亂</p>
+					<p>舉個例子</p>
+					<p>
+					<code> func createPersonNoGuard() -> Person? {<br \> if let age = age, let name = name where name.characters.count > 0 && age.characters.count > 0 { <br \> if let ageFormatted = Int(age) {<br \> return Person(name: name, age: ageFormatted) <br \>} else {<br \> return nil <br \>} } else {<br \> return nil } <br \>}
+					</code></p>
+					<p><code>
+					func createPersonWithGuard() -> Person? {
+					guard let age = age, name = name else {
+					return nil
+					}
+
+					guard name.characters.count > 0 && age.characters.count > 0 else {
+					return nil
+					}
+
+					guard let ageFormatted = Int(age) else {
+					return nil
+					} 
+					return Person(name: name, age: ageFormatted)
+					}
+					</code></p>
+					<p>使用guard是不是容易看許多？</p>
+
+				</header>
+
+
+			</section>

@@ -54,8 +54,7 @@ social:
 markdown: kramdown
 #sass:
 #  style: compressed
-yy: FUCK
 
-portfolio:
-  mainssssssss: Currently work as a iOS Developer 
-  sub: Fascinate by Apple
+collections:
+  pages:
+    output: true

@@ -19,12 +19,12 @@ note:
   second_content: Love to Share.
 
 note_1:
-  title: Welcome to my working notes
-  content: Feel free to click.
+  title: Working notes
+  content: Full of Learning and Debug.
 
 appstore:
   lyricism:
     url: http:xxxxx
     title: Works
     welcome_word: Check out my first macOS app
-    button_title: iTunes
+    button_title: Download
