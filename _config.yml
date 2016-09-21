@@ -8,7 +8,7 @@ owner: Stan # or company name
 first_published: 2016 # if migrating another site, the year of your first publish
 email: lyc2345@gmail.com
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://standev.io" # the base hostname & protocol for your site
+url: "http://github.com/lyc2345/lyc2345.github.io" # the base hostname & protocol for your site
 social:
   twitter: https://twitter.com/stitchyQQ
   github: https://github.com/lyc2345
