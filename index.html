@@ -5,27 +5,33 @@ layout: landing
 					<section id="banner">
 						<div class="inner">
 							<h2>{{ site.title }}</h2>
-							<p>{{ site.description | markdownify }}</p>
+							<!--
 							<ul class="actions">
 								<li><a href="#" class="button special">Activate</a></li>
-							</ul>
+							</ul> -->
 						</div>
-						<a href="#one" class="more scrolly">Learn More</a>
+						<p>{{ site.description | markdownify }}</p>
+						<a href="#one" class="more scrolly">About Me</a>
 					</section>
 
 				<!-- One -->
 					<section id="one" class="wrapper style1 special">
+					<h2>{{ site.data.about.sub }}</h2>
+					<strong>{{ site.data.about.experience }}</strong><br />
+					<strong>{{ site.data.about.main }}</strong>
 						<div class="inner">
 							<header class="major">
-								<h2>Arcu aliquet vel lobortis ata nisl<br />
-								eget augue amet aliquet nisl cep donec</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
-								fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
+								<p></p>
+								<h5>{{ site.data.about.tool.title }}</h5>
+								<li>{{ site.data.about.tool.first }}.</li>
+								<li>{{ site.data.about.tool.second }}.</li>
+								<li>{{ site.data.about.tool.third }}.</li>
+								<li>{{ site.data.about.tool.forth }}.</li>
 							</header>
 							<ul class="icons major">
-								<li><span class="icon fa-diamond major style1"><span class="label">Lorem</span></span></li>
-								<li><span class="icon fa-heart-o major style2"><span class="label">Ipsum</span></span></li>
-								<li><span class="icon fa-code major style3"><span class="label">Dolor</span></span></li>
+								<li><a target="_blank" href="https://github.com/lyc2345" class="icon fa-github major style1"><span class="label">Lorem</span></a></li>
+								<li><a target="_blank" href="https://twitter.com/stitchyQQ" class="icon fa-twitter major style2"><span class="label">Ipsum</span></a></li>
+								<li><a target="_blank" href="mailto:lyc2345@gmail.com" class="icon fa-code major style3"><span class="label">Dolor</span></a></li>
 							</ul>
 						</div>
 					</section>
@@ -34,23 +40,23 @@ layout: landing
 					<section id="two" class="wrapper alt style2">
 						<section class="spotlight">
 							<div class="image"><img src="images/pic01.jpg" alt="" /></div><div class="content">
-								<h2>Magna primis lobortis<br />
-								sed ullamcorper</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+								<h2>{{ site.data.intro.first.title_first }}<br />
+								{{ site.data.intro.first.title_second }}</h2>
+								<p>{{ site.data.intro.first.content }}</p>
 							</div>
 						</section>
 						<section class="spotlight">
 							<div class="image"><img src="images/pic02.jpg" alt="" /></div><div class="content">
-								<h2>Tortor dolore feugiat<br />
-								elementum magna</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+								<h2>{{ site.data.intro.second.title }}<br />
+								</h2>
+								<p>{{ site.data.intro.second.content }}</p>
 							</div>
 						</section>
 						<section class="spotlight">
 							<div class="image"><img src="images/pic03.jpg" alt="" /></div><div class="content">
-								<h2>Augue eleifend aliquet<br />
-								sed condimentum</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+								<h2>{{ site.data.intro.third.title_first }}<br />
+								{{ site.data.intro.third.title_second }}</h2>
+								<p>{{ site.data.intro.third.content }}</p>
 							</div>
 						</section>
 					</section>
@@ -59,15 +65,16 @@ layout: landing
 					<section id="three" class="wrapper style3 special">
 						<div class="inner">
 							<header class="major">
-								<h2>Accumsan mus tortor nunc aliquet</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
-								fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
+								<h2>{{ site.data.about.note.title }}</h2><br />
+								<p>{{ site.data.about.note.first_content }}</p>
+								<p>{{ site.data.about.note.second_content }}</p>
 							</header>
 							<ul class="features">
 								<li class="icon fa-paper-plane-o">
-									<h3>Arcu accumsan</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
+									<h3>{{ site.data.about.note_1.title }}</h3>
+									<p>{{ site.data.about.note_1.content }}</p>
 								</li>
+								<!--
 								<li class="icon fa-laptop">
 									<h3>Ac Augue Eget</h3>
 									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
@@ -88,6 +95,7 @@ layout: landing
 									<h3>Tortor Ut</h3>
 									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
 								</li>
+								-->
 							</ul>
 						</div>
 					</section>
@@ -96,12 +104,12 @@ layout: landing
 					<section id="cta" class="wrapper style4">
 						<div class="inner">
 							<header>
-								<h2>Arcue ut vel commodo</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet eleifend fringilla.</p>
+								<h2>{{ site.data.about.appstore.lyricism.title }}</h2>
+								<p>{{ site.data.about.appstore.lyricism.welcome_word }}</p>
 							</header>
 							<ul class="actions vertical">
-								<li><a href="#" class="button fit special">Activate</a></li>
-								<li><a href="#" class="button fit">Learn More</a></li>
+								<li><a href="#" class="button fit special">{{ site.data.about.appstore.lyricism.button_title }}</a></li>
+								<!-- <li><a href="#" class="button fit">Learn More</a></li> -->
 							</ul>
 						</div>
 					</section>

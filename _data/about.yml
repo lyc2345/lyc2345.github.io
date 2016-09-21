@@ -1,0 +1,30 @@
+
+
+experience: 2015/1 - Now
+main: iOS Developer
+sub: Fascinated by Apple
+
+
+tool:
+  title: Skills & Tools
+  first: Xcode, Objective-C, Swift
+  second: Git, SVN, Github, Bitbucket
+  third: Sketch
+  forth: Terminal
+
+
+note:
+  title: Learn & Share
+  first_content: Never Stop learning. 
+  second_content: Love to Share.
+
+note_1:
+  title: Welcome to my working notes
+  content: Feel free to click.
+
+appstore:
+  lyricism:
+    url: http:xxxxx
+    title: Works
+    welcome_word: Check out my first macOS app
+    button_title: iTunes
