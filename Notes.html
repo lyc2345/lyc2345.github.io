@@ -13,7 +13,7 @@ title: Notes
 
 				<br />
 				<br />
-				<a href="{{ site.baseurl }}/subnotes/1.html">More</a>.
+				<!-- <a href="{{ site.baseurl }}/subnotes/1.html">More</a>. -->
 				<hr />
 
 				<header>
@@ -28,22 +28,33 @@ title: Notes
 					<p>而if則會讓程式碼在金字塔內跳來跳去，會讓開發者錯亂</p>
 					<p>舉個例子</p>
 					<p>
-					<code> func createPersonNoGuard() -> Person? {<br \> if let age = age, let name = name where name.characters.count > 0 && age.characters.count > 0 { <br \> if let ageFormatted = Int(age) {<br \> return Person(name: name, age: ageFormatted) <br \>} else {<br \> return nil <br \>} } else {<br \> return nil } <br \>}
+					<code> 
+					func createPersonNoGuard() -> Person? {
+					</code>
+					<code>  
+						<br \> if let age = age, let name = name where name.characters.count > 0 && age.characters.count > 0 {
+							 <br \> if let ageFormatted = Int(age) {
+								 <br \> return Person(name: name, age: ageFormatted) <br \>
+								 } else {<br \> return nil <br \>
+								} 
+							} else {
+						<br \> return nil } 
+						<br \>}
 					</code></p>
 					<p><code>
 					func createPersonWithGuard() -> Person? {
-					guard let age = age, name = name else {
-					return nil
-					}
+						guard let age = age, name = name else {
+							return nil
+						}
 
-					guard name.characters.count > 0 && age.characters.count > 0 else {
-					return nil
-					}
+						guard name.characters.count > 0 && age.characters.count > 0 else {
+							return nil
+						}
 
-					guard let ageFormatted = Int(age) else {
-					return nil
-					} 
-					return Person(name: name, age: ageFormatted)
+						guard let ageFormatted = Int(age) else {
+							return nil
+						} 
+						return Person(name: name, age: ageFormatted)
 					}
 					</code></p>
 					<p>使用guard是不是容易看許多？</p>

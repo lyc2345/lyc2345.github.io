@@ -24,7 +24,7 @@ note_1:
 
 appstore:
   lyricism:
-    url: http:xxxxx
-    title: Works
+    url: https://github.com/lyc2345/Lyricism
+    title: Lyricism
     welcome_word: Check out my first macOS app
     button_title: Download

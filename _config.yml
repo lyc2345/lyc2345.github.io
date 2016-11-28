@@ -2,17 +2,20 @@
 #
 
 # Site settings
-title: Stan
+title: Stan Liu
 description: Become a Swifter. Love Coding.
-owner: Stan # or company name
+owner: Stan Liu # or company name
 first_published: 2016 # if migrating another site, the year of your first publish
 email: lyc2345@gmail.com
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://github.com/lyc2345/lyc2345.github.io" # the base hostname & protocol for your site
+project:
+  lyricism: https://github.com/lyc2345/Lyricism
+  alert: https://github.com/lyc2345/Alert
 social:
   twitter: https://twitter.com/stitchyQQ
   github: https://github.com/lyc2345
-  #linkedin-square: https://linkedin.com/in/<username>
+  linkedin-square: https://tw.linkedin.com/in/stan-liu-269093bb
   facebook-official: https://facebook.com/lyc2345
   #google-plus-square: https://plus.google.com/u/0/+<username>
   #email: /contact/
